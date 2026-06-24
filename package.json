@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/hailuo-mcp",
-  "version": "0.1.0",
-  "description": "RunAPI MCP server for one model line: create tasks, poll status, and check pricing with one API key.",
+  "version": "0.1.1",
+  "description": "Hailuo MCP server for RunAPI — create Hailuo AI tasks (image to video, text to video), poll status, and check pricing across 6 models with one API key.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
@@ -27,7 +27,15 @@
     "runapi",
     "mcp",
     "model-context-protocol",
-    "ai"
+    "ai",
+    "hailuo",
+    "hailuo-mcp",
+    "hailuo-ai",
+    "hailuo-api",
+    "video-generation",
+    "ai-video",
+    "image-to-video",
+    "text-to-video"
   ],
   "author": "RunAPI",
   "license": "Apache-2.0",
