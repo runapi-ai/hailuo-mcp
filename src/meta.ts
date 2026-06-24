@@ -1,5 +1,5 @@
 export const META = {
   name: "@runapi.ai/hailuo-mcp",
-  version: "0.1.1",
+  version: "0.1.4",
   lineSlug: "hailuo"
 } as const;
