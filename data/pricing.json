@@ -1,0 +1,75 @@
+{
+  "endpoints": {
+    "hailuo-02-image-to-video-pro/image_to_video": {
+      "unit_price_cents": 57
+    },
+    "hailuo-02-image-to-video-standard/image_to_video": {
+      "unit_price_cents": 30,
+      "billing_config": {
+        "keys": [
+          "duration_seconds",
+          "output_resolution"
+        ],
+        "matrix": {
+          "6": {
+            "512p": 12,
+            "768p": 30
+          },
+          "10": {
+            "512p": 20,
+            "768p": 50
+          }
+        }
+      }
+    },
+    "hailuo-2.3-image-to-video-pro/image_to_video": {
+      "unit_price_cents": 90,
+      "billing_config": {
+        "keys": [
+          "duration_seconds",
+          "output_resolution"
+        ],
+        "matrix": {
+          "6": {
+            "768p": 45,
+            "1080p": 80
+          },
+          "10": {
+            "768p": 90
+          }
+        }
+      }
+    },
+    "hailuo-2.3-image-to-video-standard/image_to_video": {
+      "unit_price_cents": 50,
+      "billing_config": {
+        "keys": [
+          "duration_seconds",
+          "output_resolution"
+        ],
+        "matrix": {
+          "6": {
+            "768p": 30,
+            "1080p": 50
+          },
+          "10": {
+            "768p": 50
+          }
+        }
+      }
+    },
+    "hailuo-02-text-to-video-pro/text_to_video": {
+      "unit_price_cents": 57
+    },
+    "hailuo-02-text-to-video-standard/text_to_video": {
+      "unit_price_cents": 50,
+      "billing_config": {
+        "key": "duration_seconds",
+        "overrides": {
+          "6": 30,
+          "10": 50
+        }
+      }
+    }
+  }
+}
