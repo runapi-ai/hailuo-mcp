@@ -1,7 +1,7 @@
 <h1 align="center">RunAPI Hailuo MCP Server</h1>
 
 <p align="center">
-  <strong>Hailuo API access for AI agents: create video generation tasks, poll results, and check pricing through one focused MCP server.</strong>
+  <strong>Hailuo API access for AI agents: run video generation operations, poll asynchronous results, and check pricing through one focused MCP server.</strong>
 </p>
 
 <p align="center">
@@ -74,10 +74,10 @@ Ready-made examples are in [`examples/`](examples/) for Claude, Cursor, Windsurf
 
 | Tool | Auth | Purpose |
 |---|---|---|
-| `image_to_video` | Yes | Create a Hailuo image to video task and optionally wait for a terminal status. Returns the task id, status, output URLs, and pricing snapshot. |
-| `text_to_video` | Yes | Create a Hailuo text to video task and optionally wait for a terminal status. Returns the task id, status, output URLs, and pricing snapshot. |
+| `image_to_video` | Yes | Create a Hailuo image to video task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
+| `text_to_video` | Yes | Create a Hailuo text to video task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
 | `get_task` | Yes | Fetch the current status and latest payload for an existing task. |
-| `check_pricing` | No | Look up the current pricing snapshot for a Hailuo model and endpoint. |
+| `check_pricing` | No | Look up current pricing for a Hailuo model and endpoint. |
 
 ---
 

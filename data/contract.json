@@ -11,6 +11,7 @@
     "hailuo/image-to-video": {
       "model": "Hailuo",
       "endpoint": "image_to_video",
+      "task_type": "asynchronous",
       "models": [
         "hailuo-02-image-to-video-pro",
         "hailuo-02-image-to-video-standard",
@@ -19,61 +20,147 @@
       ],
       "fields_by_model": {
         "hailuo-02-image-to-video-pro": {
-          "last_frame_image_url": {},
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
           "first_frame_image_url": {
+            "type": "string",
             "required": true
+          },
+          "last_frame_image_url": {
+            "type": "string"
+          },
+          "duration_seconds": {
+            "type": "integer"
+          },
+          "output_resolution": {
+            "type": "string"
+          },
+          "prompt_optimizer": {
+            "type": "boolean"
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         },
         "hailuo-02-image-to-video-standard": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "first_frame_image_url": {
+            "type": "string",
+            "required": true
+          },
+          "last_frame_image_url": {
+            "type": "string"
+          },
           "duration_seconds": {
+            "type": "integer",
             "enum": [
               6,
               10
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "512p",
               "768p"
             ]
           },
-          "last_frame_image_url": {},
-          "first_frame_image_url": {
-            "required": true
+          "prompt_optimizer": {
+            "type": "boolean"
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         },
         "hailuo-2.3-image-to-video-pro": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "first_frame_image_url": {
+            "type": "string",
+            "required": true
+          },
+          "last_frame_image_url": {
+            "type": "string"
+          },
           "duration_seconds": {
+            "type": "integer",
             "enum": [
               6,
               10
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "768p",
               "1080p"
             ]
           },
-          "first_frame_image_url": {
-            "required": true
+          "prompt_optimizer": {
+            "type": "boolean"
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         },
         "hailuo-2.3-image-to-video-standard": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "first_frame_image_url": {
+            "type": "string",
+            "required": true
+          },
+          "last_frame_image_url": {
+            "type": "string"
+          },
           "duration_seconds": {
+            "type": "integer",
             "enum": [
               6,
               10
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "768p",
               "1080p"
             ]
           },
-          "first_frame_image_url": {
-            "required": true
+          "prompt_optimizer": {
+            "type": "boolean"
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         }
       }
@@ -81,18 +168,54 @@
     "hailuo/text-to-video": {
       "model": "Hailuo",
       "endpoint": "text_to_video",
+      "task_type": "asynchronous",
       "models": [
         "hailuo-02-text-to-video-pro",
         "hailuo-02-text-to-video-standard"
       ],
       "fields_by_model": {
-        "hailuo-02-text-to-video-pro": {},
-        "hailuo-02-text-to-video-standard": {
+        "hailuo-02-text-to-video-pro": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
           "duration_seconds": {
+            "type": "integer"
+          },
+          "prompt_optimizer": {
+            "type": "boolean"
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
+          }
+        },
+        "hailuo-02-text-to-video-standard": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "duration_seconds": {
+            "type": "integer",
             "enum": [
               6,
               10
             ]
+          },
+          "prompt_optimizer": {
+            "type": "boolean"
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         }
       }
