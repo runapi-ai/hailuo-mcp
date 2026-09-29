@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.2.0](https://github.com/runapi-ai/hailuo-mcp/releases/tag/v0.2.0) - 2026-09-29
+
+### Changed
+- Reject output_resolution 1080p with duration_seconds 10 for hailuo-2.3 image-to-video models through the embedded contract input rules, and refresh the embedded contract with the current field descriptions and server defaults.
+  Migration: Use output_resolution 768p for 10-second hailuo-2.3 image-to-video requests, or keep 1080p with duration_seconds 6.
+- Depend on @runapi.ai/mcp-core 0.4.5.
+
+
 ## [v0.1.7](https://github.com/runapi-ai/hailuo-mcp/releases/tag/v0.1.7) - 2026-07-31
 
 ### Changed
