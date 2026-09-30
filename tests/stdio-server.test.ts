@@ -58,7 +58,6 @@ describe("hailuo stdio MCP server", () => {
     const tools = await client.listTools();
     const names = tools.tools.map((tool) => tool.name).sort();
     expect(names).toEqual(["check_pricing","get_task","image_to_video","login","text_to_video"]);
-
     for (const endpoint of []) {
       const tool = tools.tools.find((candidate) => candidate.name === endpoint);
       expect(tool?.inputSchema.properties, `${endpoint} is synchronous and must not expose polling controls`).not.toHaveProperty("wait");
